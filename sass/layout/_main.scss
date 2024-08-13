@@ -1,0 +1,205 @@
+.portada-02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+    margin: 30px 30px;
+    position: relative;
+}
+.wrap{
+   h2{
+    position:absolute;
+    top: 50%;
+    left: 17%;
+    background-color:rgba(255, 255, 255, 0.411);
+    padding: 12px 12px;
+    font-family: cafe-italic;
+    font-weight: 500;
+    color: black;
+    font-size: map-get($map: $fuentes-tam, $key:tercero );
+   }
+   a{
+    color: black;
+   }
+   .foto-01{
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   }
+}
+.wrap-01{
+    h2{
+        position:absolute;
+        top: 50%;
+        left: 70%;
+        background-color:#ffffff69;
+        padding: 12px 12px;
+        font-family: cafe-italic;
+        font-weight: 500;
+        color: black;
+        font-size: map-get($map: $fuentes-tam, $key:tercero );
+       }
+       a{
+        color: $colortextoprincipal;
+       }
+       .foto-02{
+        grid-column: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+}
+  .frase{
+    .frase-texto{
+        font-family: cafe-bold-italic;
+        color: $colortextoprincipal;
+        font-weight: 500;
+        font-size: 8vh;
+        text-align: center;
+        margin-top: map-get($map: $fuentes-tam, $key:primero );
+    }
+  }  
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 55px 20px 20px 180px;
+    img{
+        margin-left: 20px;
+        margin-bottom: 5px;
+        width: 16%;
+        object-fit: contain;
+    }
+    p{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-family: cafe-bold;
+        font-weight: 500;
+        color: $colortextoprincipal;
+        font-size: map-get($map: $fuentes-tam, $key:cuarto );
+    }
+  }
+
+  .frase{
+    h2{
+        font-family: cafe-bold-italic;
+        font-size: map-get($map: $fuentes-tam, $key:segundo );
+        font-weight: 600;
+        color: $colortextoprincipal;
+        text-align: center;
+    }
+  }
+  .eslogan{
+    width: 100%;
+    height: 150px;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    .pregunta{
+        font-family: cafe-bold-italic;
+        font-weight: 800;
+        color: $colortextoprincipal;
+        font-size: map-get($map: $fuentes-tam, $key:primero );
+        text-align: center;
+    }
+  }
+
+  .boton{
+    padding: 10px 40px;
+    border-top: 2px solid rgba(110, 110, 110, 0.24);
+    background-color: #99999971;
+    margin-inline-start: 600px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style:normal;
+    a{
+        color: $colortextoprincipal;
+    }
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+    margin: 10px 10px;
+    gap: 15px;
+    img{
+        width: 100%;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    margin: 30px 30px;
+    gap: 10px;
+    img{
+        margin-left: 5px;
+        width: 15%;
+    }
+    .title{
+        font-family: cafe-bold;
+        font-weight: 600;
+        font-size: 20px;
+        color: $colortextoprincipal;
+        margin: 5px 2px;
+    }
+    &.description{
+        font-family: cafe;
+        color:$colortextoprincipal;
+        font-weight: 400;
+        font-size: 12px;
+        text-justify: auto;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+}
+.pregunta-1{
+    font-family: cafe-bold;
+    color: $colortextoprincipal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container-3{
+    @include container;
+    img{
+        width: 100%;
+        height: 90%;
+        object-fit: contain;
+    }
+    p{
+        font-family: cafe-bold;
+        color:$colortextoprincipal;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+form{
+    margin: 45px 40px;
+    .label{
+        font-family: cafe-bold;
+        font-weight: 300;
+        font-size: map-get($map: $fuentes-tam, $key:cuarto );
+        color: $colortextoprincipal;
+    }
+    ::placeholder{
+        font-family: cafe-bold;
+        font-weight: 300;
+        font-size: map-get($map: $fuentes-tam, $key:cuarto );
+        color: $colortextoprincipal;    
+    }
+    .check p select option .conociste{
+        font-family: cafe-bold;
+        font-weight: 500;
+        font-size: map-get($map: $fuentes-tam, $key:cuarto )
+    }
+}

@@ -1,0 +1,26 @@
+@media(max-width:320px){
+    footer{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(3,1fr);
+        p{
+            width: 100%;
+            grid-row: 1;
+            margin-left: 10px;
+        }
+    }
+    .redes-sociales{
+       margin-left: 75px;
+        grid-row: 2;
+    }
+    .final{
+        width: 100%;
+        grid-row: 3;
+        p{
+            font-size: 3px;
+        }
+    }
+       
+    
+}

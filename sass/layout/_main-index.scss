@@ -1,0 +1,27 @@
+.portada{
+    width: 100%;
+    height: 100%;
+    .foto-portada{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.titulo-1{
+    font-family: nexa-heavy;
+    font-weight: 500;
+    color: $colortextoprincipal;
+    font-size: map-get($map: $fuentes-tam, $key:primero );
+    text-align: center;
+    margin: 25px 35px;
+}
+
+.subtitulo-1{
+    font-family: cafe-italic;
+    font-weight: 200;
+    color: $colortextoprincipal;
+    font-size: map-get($map: $fuentes-tam, $key:segundo );
+    text-align: center;
+    margin: 25px 35px;
+}

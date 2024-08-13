@@ -1,0 +1,54 @@
+
+.boton{
+  background:$colorboton;
+  color:#fff;
+  border:none;
+  position:relative;
+  margin: 40px 100px 70px 550px;
+  height:60px;
+  font-size:map-get($map: $fuentes-tam, $key:tercero );
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  a{
+    color:white;
+  }
+}
+.boton:hover{
+  background:#fff;
+  
+  a{
+    color:$colorboton2;
+  }
+}
+.boton:before,.boton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background:$colorboton2;
+  transition:400ms ease all;
+}
+.boton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.boton:hover:before,.boton:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.boton-1{
+  @extend .boton;
+  margin: 20px 10px 30px 20px;
+  height:50px;
+  a{
+    color: $colorboton2;
+  }
+  
+}
